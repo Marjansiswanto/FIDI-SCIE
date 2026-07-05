@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FIDI Portal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- LAYAR PASSWORD -->
+  <div id="gate" class="screen">
+    <div class="card">
+      <h1>Selamat Datang</h1>
+      <h2>FIDI Portal</h2>
+      <p class="subtitle">Masukkan password untuk melanjutkan</p>
+
+      <form id="loginForm">
+        <input type="password" id="passwordInput" placeholder="Password" autocomplete="off" required>
+        <button type="submit">Masuk</button>
+      </form>
+
+      <p id="errorMsg" class="error"></p>
+    </div>
+  </div>
+
+  <!-- HALAMAN INTI (MUNCUL SETELAH PASSWORD BENAR) -->
+  <div id="content" class="screen hidden">
+    <header class="topbar">
+      <span>FIDI Portal — Presentasi</span>
+      <button id="logoutBtn">Keluar</button>
+    </header>
+    <iframe id="pdfFrame" src="" title="Presentasi"></iframe>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
