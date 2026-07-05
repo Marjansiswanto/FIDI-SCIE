@@ -16,7 +16,7 @@
 const PASSWORD_HASH = "5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d";
 // Hash di atas = "password" — GANTI SEBELUM DI-DEPLOY!
 
-const PDF_PATH = "presentasi.pdf";
+const PDF_PATH = "SIPATRA-SMART_final.pdf";
 const SESSION_KEY = "fidi_portal_unlocked";
 
 const gate = document.getElementById("gate");
