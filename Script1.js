@@ -291,3 +291,88 @@ function logout() {
 /*==========================================================
  END PART 3B
 ==========================================================*/
+/*==========================================================
+ PART 3C
+ Background Animation Engine
+==========================================================*/
+
+function startBackgroundAnimation(){
+
+    animateGlobe();
+
+    animateBuildings();
+
+    animateGraph();
+
+}
+
+/*==========================================================
+ GLOBE SIGNAL
+==========================================================*/
+
+function animateGlobe(){
+
+    const globe =
+    document.querySelector(".background-globe");
+
+    if(!globe) return;
+
+    setInterval(function(){
+
+        globe.style.opacity=
+        (0.82+Math.random()*0.18);
+
+    },500);
+
+}
+
+/*==========================================================
+ BUILDING LIGHT
+==========================================================*/
+
+function animateBuildings(){
+
+    const city =
+    document.querySelector(".background-city");
+
+    if(!city) return;
+
+    setInterval(function(){
+
+        city.style.filter=
+        "brightness("+
+        (0.9+Math.random()*0.25)+")";
+
+    },700);
+
+}
+
+/*==========================================================
+ GRAPH EFFECT
+==========================================================*/
+
+function animateGraph(){
+
+    const graph =
+    document.querySelector(".background-graph");
+
+    if(!graph) return;
+
+    let x=0;
+
+    setInterval(function(){
+
+        x++;
+
+        graph.style.backgroundPosition=
+        x+"px 0";
+
+    },40);
+
+}
+
+/*==========================================================
+ START ENGINE
+==========================================================*/
+
+startBackgroundAnimation();
