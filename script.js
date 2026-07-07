@@ -821,3 +821,132 @@ i=0;
 },3000);
 
 }
+/*==========================================================
+ Build 0.4
+ Part 5E
+ Enterprise Runtime Optimizer
+==========================================================*/
+
+runtimeOptimizer();
+
+function runtimeOptimizer(){
+
+setInterval(function(){
+
+refreshRuntime();
+
+heartbeat();
+
+},5000);
+
+}
+
+/*==========================================================
+ Runtime Refresh
+==========================================================*/
+
+function refreshRuntime(){
+
+const status=document.getElementById("loginStatus");
+
+if(!status) return;
+
+const now=new Date();
+
+status.innerHTML=
+
+"System Ready • "+
+
+now.toLocaleTimeString();
+
+}
+
+/*==========================================================
+ Heart Beat
+==========================================================*/
+
+function heartbeat(){
+
+const portal=
+
+document.querySelector(".portal-title h1");
+
+if(!portal) return;
+
+portal.animate(
+
+[
+
+{
+
+opacity:.85,
+
+transform:"scale(1)"
+
+},
+
+{
+
+opacity:1,
+
+transform:"scale(1.02)"
+
+},
+
+{
+
+opacity:.85,
+
+transform:"scale(1)"
+
+}
+
+],
+
+{
+
+duration:1800,
+
+iterations:1
+
+}
+
+);
+
+}
+
+/*==========================================================
+ Window Resize
+==========================================================*/
+
+window.addEventListener(
+
+"resize",
+
+function(){
+
+console.log(
+
+"Display : "+
+
+window.innerWidth+
+
+"x"+
+
+window.innerHeight
+
+);
+
+}
+
+);
+
+/*==========================================================
+ Build Complete
+==========================================================*/
+
+console.log(
+
+"FIDI-SPIE Build 0.4 Ready"
+
+);
