@@ -1466,3 +1466,176 @@ background-position:1000px 0;
 }
 
    }
+/*==========================================================
+ FIDI-SPIE ENTERPRISE BACKGROUND ENGINE V1.0
+ PART 4A
+==========================================================*/
+
+/* ---------- SKY ---------- */
+
+#bg-sky{
+
+position:absolute;
+
+inset:0;
+
+background:url("assets/background/sky.webp")
+center center/cover no-repeat;
+
+animation:skyMove 60s linear infinite;
+
+z-index:1;
+
+}
+
+/* ---------- GLOBE ---------- */
+
+#bg-globe{
+
+position:absolute;
+
+inset:0;
+
+background:url("assets/background/globe.png")
+center center/cover no-repeat;
+
+animation:globeGlow 6s ease-in-out infinite;
+
+z-index:2;
+
+}
+
+/* ---------- CITY ---------- */
+
+#bg-city{
+
+position:absolute;
+
+inset:0;
+
+background:url("assets/background/city.png")
+center center/cover no-repeat;
+
+animation:cityPulse 4s ease-in-out infinite;
+
+z-index:3;
+
+}
+
+/* ---------- GLOW ---------- */
+
+#bg-glow{
+
+position:absolute;
+
+inset:0;
+
+background:url("assets/background/glow.png")
+center center/cover no-repeat;
+
+mix-blend-mode:screen;
+
+animation:glowPulse 5s ease-in-out infinite;
+
+z-index:4;
+
+pointer-events:none;
+
+}
+/*==========================================================
+KEYFRAME
+==========================================================*/
+
+@keyframes skyMove{
+
+0%{
+
+transform:scale(1);
+
+}
+
+50%{
+
+transform:scale(1.03);
+
+}
+
+100%{
+
+transform:scale(1);
+
+}
+
+}
+
+@keyframes globeGlow{
+
+0%{
+
+opacity:.88;
+
+transform:scale(1);
+
+}
+
+50%{
+
+opacity:1;
+
+transform:scale(1.015);
+
+}
+
+100%{
+
+opacity:.88;
+
+transform:scale(1);
+
+}
+
+}
+
+@keyframes cityPulse{
+
+0%{
+
+filter:brightness(.95);
+
+}
+
+50%{
+
+filter:brightness(1.08);
+
+}
+
+100%{
+
+filter:brightness(.95);
+
+}
+
+}
+
+@keyframes glowPulse{
+
+0%{
+
+opacity:.35;
+
+}
+
+50%{
+
+opacity:.8;
+
+}
+
+100%{
+
+opacity:.35;
+
+}
+
+   }
