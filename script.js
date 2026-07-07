@@ -6,7 +6,8 @@
 // CATATAN JUJUR: ini bukan keamanan tingkat tinggi, hanya
 // mencegah orang iseng. Untuk data benar-benar rahasia,
 // gunakan hosting dengan autentikasi server (bukan GitHub Pages).
-//
+// Cara mengganti file *.pdf nya:
+//  pada baris 20 == const PDF_PATH = "SIPATRA-SMART_final.pdf" , ingat tanda ; diakhir baris jangan hilang.
 // Cara mengganti password:
 // 1. Buka https://emn178.github.io/online-tools/sha256.html
 // 2. Ketik password baru Anda, salin hasil hash-nya
