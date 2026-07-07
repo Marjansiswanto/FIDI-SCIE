@@ -376,3 +376,193 @@ function animateGraph(){
 ==========================================================*/
 
 startBackgroundAnimation();
+/*==========================================================
+ FIDI-SPIE
+ Build 0.4
+ Part 5A
+ Enterprise Animation Engine
+==========================================================*/
+
+document.addEventListener("DOMContentLoaded",function(){
+
+startEngine();
+
+});
+
+function startEngine(){
+
+startClock();
+
+startDate();
+
+animateGlow();
+
+animateGlobe();
+
+animateNetwork();
+
+animateNodes();
+
+animateStreet();
+
+animateGraph();
+
+}
+
+/*==========================================================
+ GLOW
+==========================================================*/
+
+function animateGlow(){
+
+const glow=document.getElementById("bg-glow");
+
+if(!glow) return;
+
+let opacity=0.45;
+
+let dir=1;
+
+setInterval(function(){
+
+opacity+=0.01*dir;
+
+if(opacity>=0.80) dir=-1;
+
+if(opacity<=0.40) dir=1;
+
+glow.style.opacity=opacity;
+
+},60);
+
+}
+
+/*==========================================================
+ GLOBE
+==========================================================*/
+
+function animateGlobe(){
+
+const globe=document.getElementById("bg-globe");
+
+if(!globe) return;
+
+let angle=0;
+
+setInterval(function(){
+
+angle+=0.03;
+
+globe.style.transform=
+
+"rotate("+angle+"deg)";
+
+},40);
+
+}
+
+/*==========================================================
+ NETWORK
+==========================================================*/
+
+function animateNetwork(){
+
+const network=document.getElementById("bg-network");
+
+if(!network) return;
+
+let x=0;
+
+setInterval(function(){
+
+x++;
+
+network.style.backgroundPosition=
+
+x+"px 0";
+
+},35);
+
+}
+
+/*==========================================================
+ GRAPH
+==========================================================*/
+
+function animateGraph(){
+
+const graph=document.getElementById("bg-graph");
+
+if(!graph) return;
+
+let y=0;
+
+let dir=1;
+
+setInterval(function(){
+
+y+=dir;
+
+if(y>=8) dir=-1;
+
+if(y<=0) dir=1;
+
+graph.style.transform=
+
+"translateY("+(-y)+"px)";
+
+},70);
+
+}
+
+/*==========================================================
+ STREET
+==========================================================*/
+
+function animateStreet(){
+
+const street=document.getElementById("bg-street");
+
+if(!street) return;
+
+let light=0.70;
+
+let dir=1;
+
+setInterval(function(){
+
+light+=0.02*dir;
+
+if(light>=1) dir=-1;
+
+if(light<=0.60) dir=1;
+
+street.style.opacity=light;
+
+},80);
+
+}
+
+/*==========================================================
+ NODE ENGINE
+==========================================================*/
+
+function animateNodes(){
+
+const nodes=document.getElementById("bg-nodes");
+
+if(!nodes) return;
+
+let state=false;
+
+setInterval(function(){
+
+state=!state;
+
+nodes.style.opacity=
+
+state?1:0.55;
+
+},500);
+
+}
