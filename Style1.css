@@ -25,8 +25,156 @@ body{
     color:#ffffff;
 
 }
-
 /* ==========================================================
+   Background Engine v2
+   ========================================================== */
+
+#animated-background{
+
+    position:fixed;
+
+    inset:0;
+
+    overflow:hidden;
+
+    z-index:-100;
+
+}
+
+/* ================= SKY ================= */
+
+#bg-sky{
+
+    position:absolute;
+
+    inset:0;
+
+    background-image:url("assets/background/sky.webp");
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+/* ================= GLOBE ================= */
+
+#bg-globe{
+
+    position:absolute;
+
+    inset:0;
+
+    background-image:url("assets/background/globe.png");
+
+    background-size:cover;
+
+    background-position:center;
+
+    pointer-events:none;
+
+}
+
+/* ================= NETWORK ================= */
+
+#bg-network{
+
+    position:absolute;
+
+    inset:0;
+
+    background-image:url("assets/background/network.svg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    pointer-events:none;
+
+}
+
+/* ================= NODE ================= */
+
+#bg-nodes{
+
+    position:absolute;
+
+    inset:0;
+
+    background-image:url("assets/background/nodes.svg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    pointer-events:none;
+
+}
+
+/* ================= CITY ================= */
+
+#bg-city{
+
+    position:absolute;
+
+    inset:0;
+
+    background-image:url("assets/background/city.png");
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+/* ================= STREET ================= */
+
+#bg-street{
+
+    position:absolute;
+
+    inset:0;
+
+    background-image:url("assets/background/streetlight.png");
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+/* ================= GRAPH ================= */
+
+#bg-graph{
+
+    position:absolute;
+
+    inset:0;
+
+    background-image:url("assets/background/graph.svg");
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+/* ================= GLOW ================= */
+
+#bg-glow{
+
+    position:absolute;
+
+    inset:0;
+
+    background-image:url("assets/background/glow.png");
+
+    background-size:cover;
+
+    background-position:center;
+
+   }
+* ==========================================================
    Animated Background
    ========================================================== */
 
