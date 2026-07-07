@@ -1860,3 +1860,39 @@ transform:translateY(-8px);
 }
 
 }
+/*==========================================================
+ Build 0.4
+ Part 5D
+==========================================================*/
+
+.login-button{
+
+transition:
+
+all .35s ease;
+
+}
+
+input{
+
+transition:
+
+all .30s ease;
+
+}
+
+#loginStatus{
+
+font-size:14px;
+
+font-weight:500;
+
+letter-spacing:1px;
+
+color:#7FE8FF;
+
+text-shadow:
+
+0 0 8px rgba(0,220,255,.60);
+
+}
