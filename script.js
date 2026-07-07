@@ -710,3 +710,114 @@ city.style.filter=
 "brightness("+value+")";
 
 }
+/*==========================================================
+ Build 0.4
+ Part 5D
+ Enterprise Login Enhancement
+==========================================================*/
+
+initLoginEffects();
+
+function initLoginEffects(){
+
+focusEffect();
+
+buttonEffect();
+
+statusAnimation();
+
+}
+
+/*==========================================================
+ Input Focus
+==========================================================*/
+
+function focusEffect(){
+
+const inputs=document.querySelectorAll("input");
+
+inputs.forEach(function(item){
+
+item.addEventListener("focus",function(){
+
+this.style.boxShadow=
+
+"0 0 18px rgba(0,200,255,.65)";
+
+});
+
+item.addEventListener("blur",function(){
+
+this.style.boxShadow="none";
+
+});
+
+});
+
+}
+
+/*==========================================================
+ Login Button
+==========================================================*/
+
+function buttonEffect(){
+
+const btn=document.querySelector(".login-button");
+
+if(!btn) return;
+
+btn.addEventListener("mouseenter",function(){
+
+this.style.transform="scale(1.03)";
+
+});
+
+btn.addEventListener("mouseleave",function(){
+
+this.style.transform="scale(1)";
+
+});
+
+}
+
+/*==========================================================
+ Status Animation
+==========================================================*/
+
+function statusAnimation(){
+
+const status=document.getElementById("loginStatus");
+
+if(!status) return;
+
+const message=[
+
+"Enterprise Core Ready",
+
+"Security Active",
+
+"Cloud Connected",
+
+"Network Stable",
+
+"AI Engine Online"
+
+];
+
+let i=0;
+
+setInterval(function(){
+
+status.innerHTML=message[i];
+
+i++;
+
+if(i>=message.length){
+
+i=0;
+
+}
+
+},3000);
+
+}
