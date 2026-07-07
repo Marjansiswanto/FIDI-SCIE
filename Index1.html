@@ -1,1 +1,482 @@
+<!DOCTYPE html>
+<html lang="id">
 
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>FIDI-SPIE Enterprise Portal</title>
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="style.css">
+
+</head>
+
+<body>
+
+<!-- ===================================================== -->
+<!-- Animated Background -->
+<!-- ===================================================== -->
+
+<div id="animated-background">
+
+<div class="background-overlay"></div>
+
+<div class="background-glow"></div>
+
+<div class="background-grid"></div>
+
+<div class="background-particles"></div>
+
+<div class="background-network"></div>
+
+<div class="background-graph"></div>
+
+<div class="background-city"></div>
+
+<div class="background-globe"></div>
+
+</div>
+
+<!-- ===================================================== -->
+<!-- Header -->
+<!-- ===================================================== -->
+
+<header class="top-bar">
+
+<div class="left-logo">
+
+<img
+src="assets/logo-danantara.png"
+alt="Danantara"
+class="logo-company">
+
+<img
+src="assets/logo-sig.png"
+alt="SIG"
+class="logo-company">
+
+</div>
+
+<div class="portal-title">
+
+<h1>
+
+FIDI-SPIE
+
+</h1>
+
+<p>
+
+Enterprise Portal Investasi Indonesia
+
+</p>
+
+</div>
+
+<div class="right-status">
+
+<div class="status-online">
+
+<span class="online-dot"></span>
+
+ONLINE
+
+</div>
+
+<div id="liveClock">
+
+09:35:45
+
+</div>
+
+<div id="liveDate">
+
+07 JULY 2026
+
+</div>
+
+</div>
+
+</header>
+
+<!-- ===================================================== -->
+<!-- Main Container -->
+<!-- ===================================================== -->
+
+<main class="container">
+
+<!-- ================= LEFT ================= -->
+
+<section class="left-panel">
+
+<div class="market-card">
+
+<h3>
+
+MARKET OVERVIEW
+
+</h3>
+
+<table>
+
+<tr>
+
+<td>IHSG</td>
+
+<td>7,235.15</td>
+
+<td class="green">
+
+▲1.42%
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>USD</td>
+
+<td>16,255</td>
+
+<td class="green">
+
+▲0.22%
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>GOLD</td>
+
+<td>2,391</td>
+
+<td class="green">
+
+▲0.17%
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>OIL</td>
+
+<td>82.16</td>
+
+<td class="red">
+
+▼0.14%
+
+</td>
+
+</tr>
+
+</table>
+
+</div>
+
+<div class="quote-card">
+
+<h4>
+
+Enterprise Vision
+
+</h4>
+
+<p>
+
+Secure
+
+•
+
+Professional
+
+•
+
+Intelligent
+
+•
+
+Future Ready
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ================= CENTER ================= -->
+
+<section class="center-panel">
+
+<div class="login-card">
+
+<img
+src="assets/logo-fidi-spie.png"
+class="main-logo"
+alt="FIDI">
+
+<h2>
+
+FIDI-SPIE
+
+</h2>
+
+<h3>
+
+Smart Presentation Interactive Engine
+
+</h3>
+<form id="loginForm">
+
+<div class="input-group">
+
+<label>
+
+Username
+
+</label>
+
+<input
+type="text"
+id="username"
+placeholder="Masukkan Username"
+autocomplete="off">
+
+</div>
+
+<div class="input-group">
+
+<label>
+
+Password
+
+</label>
+
+<div class="password-box">
+
+<input
+type="password"
+id="password"
+placeholder="Masukkan Password">
+
+<button
+type="button"
+id="togglePassword">
+
+👁
+
+</button>
+
+</div>
+
+</div>
+
+<div class="option-row">
+
+<label class="remember">
+
+<input
+type="checkbox"
+id="remember">
+
+Remember Me
+
+</label>
+
+<a
+href="#"
+class="forgot">
+
+Forgot Password?
+
+</a>
+
+</div>
+
+<button
+type="button"
+class="login-button"
+onclick="login()">
+
+LOGIN SECURELY
+
+</button>
+
+<div class="separator">
+
+<span>
+
+OR
+
+</span>
+
+</div>
+
+<button
+type="button"
+class="biometric-button">
+
+LOGIN WITH BIOMETRIC
+
+</button>
+
+<div id="loginStatus">
+
+Ready...
+
+</div>
+
+</form>
+
+</div>
+
+</section>
+
+<!-- ================= RIGHT PANEL ================= -->
+
+<section class="right-panel">
+
+<div class="weather-card">
+
+<h3>
+
+MAKASSAR
+
+</h3>
+
+<div class="temperature">
+
+30°C
+
+</div>
+
+<p>
+
+Sunny Cloudy
+
+</p>
+
+</div>
+
+<div class="system-card">
+
+<h3>
+
+SYSTEM STATUS
+
+</h3>
+
+<ul>
+
+<li>
+
+Core Engine
+
+<span class="green">
+
+ONLINE
+
+</span>
+
+</li>
+
+<li>
+
+Security
+
+<span class="green">
+
+ACTIVE
+
+</span>
+
+</li>
+
+<li>
+
+Network
+
+<span class="green">
+
+CONNECTED
+
+</span>
+
+</li>
+
+<li>
+
+Cloud
+
+<span class="green">
+
+READY
+
+</span>
+
+</li>
+
+</ul>
+
+</div>
+
+<div class="version-card">
+
+<h3>
+
+VERSION
+
+</h3>
+
+<p>
+
+Prototype v0.1
+
+</p>
+
+</div>
+
+</section>
+
+</main>
+
+<footer>
+
+<div class="footer-left">
+
+© 2026 FIDI-SPIE Enterprise Portal
+
+</div>
+
+<div class="footer-right">
+
+Powered by HTML5 • CSS3 • JavaScript
+
+</div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+  </html>
