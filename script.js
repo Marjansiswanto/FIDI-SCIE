@@ -17,6 +17,7 @@
 const PASSWORD_HASH = "c9daf4dd7326fbca56c8987ca62792df03b2e93951ab9bab6081cf8571258104";
 // Hash di atas = "password" — GANTI SEBELUM DI-DEPLOY!
 
+//const PDF_PATH = "SIPATRA-SMART_final.pdf";
 const PDF_PATH = "Assignment-Peserta.pdf";
 const SESSION_KEY = "fidi_portal_unlocked";
 
