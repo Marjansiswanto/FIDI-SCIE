@@ -566,3 +566,147 @@ state?1:0.55;
 },500);
 
 }
+/*==========================================================
+ Build 0.4
+ Part 5B
+ Enterprise Dynamic Effect
+==========================================================*/
+
+function enterpriseEffect(){
+
+    randomGlow();
+
+    randomGraph();
+
+    randomCity();
+
+}
+
+setInterval(enterpriseEffect,1200);
+
+/*==========================================================
+ Random Glow
+==========================================================*/
+
+function randomGlow(){
+
+    const glow=document.getElementById("bg-glow");
+
+    if(!glow) return;
+
+    glow.style.opacity=
+
+    (0.45+Math.random()*0.35);
+
+}
+
+/*==========================================================
+ Random Graph
+==========================================================*/
+
+function randomGraph(){
+
+    const graph=document.getElementById("bg-graph");
+
+    if(!graph) return;
+
+    graph.style.opacity=
+
+    (0.75+Math.random()*0.25);
+
+}
+
+/*==========================================================
+ Random City
+==========================================================*/
+
+function randomCity(){
+
+    const city=document.getElementById("bg-city");
+
+    if(!city) return;
+
+    city.style.filter=
+
+    "brightness("+
+
+    (0.92+Math.random()*0.18)+
+
+    ")";
+
+}
+/*==========================================================
+ Build 0.4
+ Part 5C
+ Enterprise Runtime Engine
+==========================================================*/
+
+runtimeEngine();
+
+function runtimeEngine(){
+
+setInterval(function(){
+
+scanEffect();
+
+signalEffect();
+
+cityEffect();
+
+},800);
+
+}
+
+/*==========================================================
+ Scanner
+==========================================================*/
+
+function scanEffect(){
+
+const globe=document.getElementById("bg-globe");
+
+if(!globe) return;
+
+const scale=1+(Math.random()*0.015);
+
+globe.style.transform=
+
+"scale("+scale+")";
+
+}
+
+/*==========================================================
+ Signal
+==========================================================*/
+
+function signalEffect(){
+
+const network=document.getElementById("bg-network");
+
+if(!network) return;
+
+network.style.opacity=
+
+0.35+Math.random()*0.40;
+
+}
+
+/*==========================================================
+ City
+==========================================================*/
+
+function cityEffect(){
+
+const city=document.getElementById("bg-city");
+
+if(!city) return;
+
+const value=
+
+0.95+Math.random()*0.12;
+
+city.style.filter=
+
+"brightness("+value+")";
+
+}
