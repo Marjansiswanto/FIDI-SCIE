@@ -1639,3 +1639,224 @@ opacity:.35;
 }
 
    }
+/* ==========================================================
+   PART 4D
+   Background Animation Engine
+========================================================== */
+
+#bg-sky,
+#bg-globe,
+#bg-network,
+#bg-nodes,
+#bg-city,
+#bg-street,
+#bg-graph,
+#bg-glow{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    pointer-events:none;
+
+    background-repeat:no-repeat;
+
+    background-position:center;
+
+    background-size:cover;
+
+}
+
+/* Sky */
+
+#bg-sky{
+
+    background-image:url("assets/background/sky.webp");
+
+    z-index:-20;
+
+}
+
+/* Glow */
+
+#bg-glow{
+
+    background-image:url("assets/background/glow.png");
+
+    mix-blend-mode:screen;
+
+    opacity:.55;
+
+    animation:glowPulse 4s ease-in-out infinite;
+
+    z-index:-19;
+
+}
+
+/* Globe */
+
+#bg-globe{
+
+    background-image:url("assets/background/globe.png");
+
+    background-position:left center;
+
+    background-size:42%;
+
+    animation:globeFloat 18s ease-in-out infinite;
+
+    z-index:-18;
+
+}
+
+/* Network */
+
+#bg-network{
+
+    background-image:url("assets/background/network.svg");
+
+    background-position:left center;
+
+    background-size:42%;
+
+    opacity:.45;
+
+    animation:networkBlink 2.5s infinite alternate;
+
+    z-index:-17;
+
+}
+
+/* Nodes */
+
+#bg-nodes{
+
+    background-image:url("assets/background/nodes.svg");
+
+    background-position:left center;
+
+    background-size:42%;
+
+    animation:nodesBlink 1.3s infinite alternate;
+
+    z-index:-16;
+
+}
+
+/* City */
+
+#bg-city{
+
+    background-image:url("assets/background/city.png");
+
+    background-position:right bottom;
+
+    background-size:46%;
+
+    z-index:-15;
+
+}
+
+/* Street */
+
+#bg-street{
+
+    background-image:url("assets/background/streetlight.png");
+
+    background-position:right bottom;
+
+    background-size:46%;
+
+    opacity:.85;
+
+    animation:streetBlink 2s infinite;
+
+    z-index:-14;
+
+}
+
+/* Graph */
+
+#bg-graph{
+
+    background-image:url("assets/background/graph.svg");
+
+    background-position:right center;
+
+    background-size:45%;
+
+    animation:graphMove 3s infinite alternate;
+
+    z-index:-13;
+
+}
+
+/* ================= Animations ================= */
+
+@keyframes glowPulse{
+
+0%{opacity:.35;}
+
+50%{opacity:.8;}
+
+100%{opacity:.35;}
+
+}
+
+@keyframes globeFloat{
+
+0%{transform:translateY(0px);}
+
+50%{transform:translateY(-8px);}
+
+100%{transform:translateY(0px);}
+
+}
+
+@keyframes nodesBlink{
+
+from{opacity:.35;}
+
+to{opacity:1;}
+
+}
+
+@keyframes networkBlink{
+
+from{opacity:.20;}
+
+to{opacity:.70;}
+
+}
+
+@keyframes streetBlink{
+
+0%{opacity:.65;}
+
+50%{opacity:1;}
+
+100%{opacity:.65;}
+
+}
+
+@keyframes graphMove{
+
+0%{
+
+transform:translateY(0px);
+
+}
+
+100%{
+
+transform:translateY(-8px);
+
+}
+
+}
