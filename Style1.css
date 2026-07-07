@@ -1238,3 +1238,83 @@ padding:18px;
 animation:shake .5s;
 
 }
+/*==========================================================
+PART 3C
+==========================================================*/
+
+.background-globe{
+
+animation:
+globePulse 3s infinite;
+
+}
+
+@keyframes globePulse{
+
+0%{
+
+opacity:.85;
+
+}
+
+50%{
+
+opacity:1;
+
+}
+
+100%{
+
+opacity:.85;
+
+}
+
+}
+
+.background-city{
+
+animation:
+cityLight 1.5s infinite alternate;
+
+}
+
+@keyframes cityLight{
+
+0%{
+
+filter:brightness(.92);
+
+}
+
+100%{
+
+filter:brightness(1.15);
+
+}
+
+}
+
+.background-graph{
+
+background-size:300% 100%;
+
+animation:
+graphMove 10s linear infinite;
+
+}
+
+@keyframes graphMove{
+
+0%{
+
+background-position:0 0;
+
+}
+
+100%{
+
+background-position:1000px 0;
+
+}
+
+   }
