@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<svg xmlns="http://www.w3.org/2000/svg"
+viewBox="0 0 1920 600">
+
+<defs>
+
+<radialGradient id="lampGlow">
+
+<stop offset="0%" stop-color="#FFFFFF"/>
+
+<stop offset="30%" stop-color="#9CFDFF"/>
+
+<stop offset="100%" stop-color="transparent"/>
+
+</radialGradient>
+
+</defs>
+
+<g id="streetlights">
+
+<!-- Lamp 1 -->
+<line x1="120" y1="560" x2="120" y2="470"
+stroke="#5EEFFF"
+stroke-width="3"/>
+
+<circle cx="120" cy="470" r="5"
+fill="#B8FFFF"/>
+
+<circle cx="120" cy="470" r="35"
+fill="url(#lampGlow)"
+opacity=".45"/>
+
+<!-- Lamp 2 -->
+
+<line x1="320" y1="560" x2="320" y2="455"
+stroke="#5EEFFF"
+stroke-width="3"/>
+
+<circle cx="320" cy="455" r="5"
+fill="#B8FFFF"/>
+
+<circle cx="320" cy="455" r="35"
+fill="url(#lampGlow)"
+opacity=".45"/>
+
+<!-- Lamp 3 -->
+
+<line x1="560" y1="560" x2="560" y2="480"
+stroke="#5EEFFF"
+stroke-width="3"/>
+
+<circle cx="560" cy="480" r="5"
+fill="#B8FFFF"/>
+
+<circle cx="560" cy="480" r="35"
+fill="url(#lampGlow)"
+opacity=".45"/>
+
+<!-- Lamp 4 -->
+
+<line x1="860" y1="560" x2="860" y2="460"
+stroke="#5EEFFF"
+stroke-width="3"/>
+
+<circle cx="860" cy="460" r="5"
+fill="#B8FFFF"/>
+
+<circle cx="860" cy="460" r="35"
+fill="url(#lampGlow)"
+opacity=".45"/>
+
+<!-- Lamp 5 -->
+
+<line x1="1220" y1="560" x2="1220" y2="470"
+stroke="#5EEFFF"
+stroke-width="3"/>
+
+<circle cx="1220" cy="470" r="5"
+fill="#B8FFFF"/>
+
+<circle cx="1220" cy="470" r="35"
+fill="url(#lampGlow)"
+opacity=".45"/>
+
+<!-- Lamp 6 -->
+
+<line x1="1600" y1="560" x2="1600" y2="450"
+stroke="#5EEFFF"
+stroke-width="3"/>
+
+<circle cx="1600" cy="450" r="5"
+fill="#B8FFFF"/>
+
+<circle cx="1600" cy="450" r="35"
+fill="url(#lampGlow)"
+opacity=".45"/>
+
+</g>
+
+</svg>
