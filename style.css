@@ -2081,3 +2081,44 @@ text-shadow:
 0 0 18px rgba(0,210,255,.45);
 
    }
+@keyframes globeRotate{
+
+0%{
+
+transform:
+translateY(-50%)
+rotate(0deg);
+
+}
+
+100%{
+
+transform:
+translateY(-50%)
+rotate(360deg);
+
+}
+
+}
+
+@keyframes streetLight{
+
+0%{
+
+opacity:.65;
+
+}
+
+50%{
+
+opacity:1;
+
+}
+
+100%{
+
+opacity:.65;
+
+}
+
+   }
