@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<svg xmlns="http://www.w3.org/2000/svg"
+viewBox="0 0 1920 600">
+
+<defs>
+
+<linearGradient id="cityGlow"
+x1="0%"
+y1="0%"
+x2="0%"
+y2="100%">
+
+<stop offset="0%" stop-color="#3EEBFF"/>
+
+<stop offset="100%" stop-color="#052E4F"/>
+
+</linearGradient>
+
+</defs>
+
+<rect x="0" y="560" width="1920" height="40"
+fill="#02101F"/>
+
+<rect x="80" y="230" width="80" height="330"
+fill="url(#cityGlow)"/>
+
+<rect x="180" y="180" width="120" height="380"
+fill="url(#cityGlow)"/>
+
+<rect x="340" y="260" width="90" height="300"
+fill="url(#cityGlow)"/>
+
+<rect x="470" y="120" width="140" height="440"
+fill="url(#cityGlow)"/>
+
+<rect x="660" y="220" width="110" height="340"
+fill="url(#cityGlow)"/>
+
+<rect x="820" y="150" width="150" height="410"
+fill="url(#cityGlow)"/>
+
+<rect x="1020" y="260" width="90" height="300"
+fill="url(#cityGlow)"/>
+
+<rect x="1150" y="170" width="120" height="390"
+fill="url(#cityGlow)"/>
+
+<rect x="1320" y="210" width="100" height="350"
+fill="url(#cityGlow)"/>
+
+<rect x="1470" y="130" width="140" height="430"
+fill="url(#cityGlow)"/>
+
+<rect x="1650" y="240" width="90" height="320"
+fill="url(#cityGlow)"/>
+
+<rect x="1780" y="190" width="100" height="370"
+fill="url(#cityGlow)"/>
+
+</svg>
