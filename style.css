@@ -61,19 +61,36 @@ body{
 
 #bg-globe{
 
-    position:absolute;
+position:absolute;
 
-    inset:0;
+top:50%;
 
-    background-image:url("assets/background/globe.png");
+left:8%;
 
-    background-size:cover;
+width:42vw;
 
-    background-position:center;
+height:42vw;
 
-    pointer-events:none;
+max-width:620px;
+
+max-height:620px;
+
+transform:translateY(-50%);
+
+background:url("assets/background/globe.svg")
+center center
+no-repeat;
+
+background-size:contain;
+
+opacity:.55;
+
+animation:globeRotate 80s linear infinite;
+
+z-index:1;
 
 }
+
 
 /* ================= NETWORK ================= */
 
