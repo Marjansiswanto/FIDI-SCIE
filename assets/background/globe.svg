@@ -1,1 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
 
+<svg xmlns="http://www.w3.org/2000/svg"
+viewBox="0 0 800 800">
+
+<defs>
+
+<radialGradient id="earthGlow">
+
+<stop offset="0%" stop-color="#8CFBFF"/>
+
+<stop offset="60%" stop-color="#23BFFF"/>
+
+<stop offset="100%" stop-color="#003C72"/>
+
+</radialGradient>
+
+<filter id="blur">
+
+<feGaussianBlur stdDeviation="6"/>
+
+</filter>
+
+</defs>
+
+<circle
+cx="400"
+cy="400"
+r="300"
+fill="url(#earthGlow)"
+opacity=".18"/>
+
+<circle
+cx="400"
+cy="400"
+r="260"
+fill="none"
+stroke="#62EAFF"
+stroke-width="2"/>
+
+<circle
+cx="400"
+cy="400"
+r="210"
+fill="none"
+stroke="#3AD5FF"
+stroke-width="1"/>
+
+<circle
+cx="400"
+cy="400"
+r="160"
+fill="none"
+stroke="#25C8FF"
+stroke-width="1"/>
+
+<ellipse
+cx="400"
+cy="400"
+rx="260"
+ry="110"
+fill="none"
+stroke="#63EFFF"
+stroke-width="1"/>
+
+<ellipse
+cx="400"
+cy="400"
+rx="260"
+ry="190"
+fill="none"
+stroke="#63EFFF"
+stroke-width="1"/>
+
+<ellipse
+cx="400"
+cy="400"
+rx="110"
+ry="260"
+fill="none"
+stroke="#63EFFF"
+stroke-width="1"/>
+
+<ellipse
+cx="400"
+cy="400"
+rx="190"
+ry="260"
+fill="none"
+stroke="#63EFFF"
+stroke-width="1"/>
+
+<circle
+cx="400"
+cy="400"
+r="6"
+fill="#A8FFFF"/>
+
+</svg>
