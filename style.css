@@ -1966,3 +1966,83 @@ optimizeLegibility;
 antialiased;
 
 }
+/*==========================================================
+ Build 0.5
+ Part 6D
+ Enterprise Text Logo
+==========================================================*/
+
+.logo-danantara{
+
+font-size:14px;
+
+font-weight:700;
+
+letter-spacing:2px;
+
+color:#8DEEFF;
+
+padding:8px 14px;
+
+border:1px solid rgba(120,230,255,.45);
+
+border-radius:8px;
+
+background:rgba(0,35,65,.30);
+
+backdrop-filter:blur(8px);
+
+}
+
+.logo-sig{
+
+font-size:14px;
+
+font-weight:700;
+
+letter-spacing:2px;
+
+color:#8DEEFF;
+
+padding:8px 14px;
+
+border:1px solid rgba(120,230,255,.45);
+
+border-radius:8px;
+
+background:rgba(0,35,65,.30);
+
+backdrop-filter:blur(8px);
+
+margin-left:10px;
+
+}
+
+.logo-fidi{
+
+font-size:44px;
+
+font-weight:800;
+
+letter-spacing:4px;
+
+text-align:center;
+
+margin-bottom:18px;
+
+background:linear-gradient(
+90deg,
+#CFFFFF,
+#5FD8FF,
+#00AFFF
+);
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+text-shadow:
+
+0 0 18px rgba(0,210,255,.45);
+
+   }
